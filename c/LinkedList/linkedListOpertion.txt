@@ -1,0 +1,24 @@
+Linked list is a collection of nodes which are not necessary to be in adjacent memory locations.
+
+Each node contains 2 fields.
+1. Data Field
+2. Next field ( or ) pointer field ( or ) address field
+Data field:-  Data field contains values like 9, 6.8, ‘a’ , “ramu” , 9849984900
+Next field:- It contains address of its next node. The last node next field contains NULL which indicates end of the linked list. 
+
+We can perform mainly the following operations on single linked list.
+1. Creation
+2. Display
+3. Inserting an element into the list at begin position
+4. Inserting an element into the list at end position
+5. Inserting an element into the list at specified position
+6. Deleting an element from the list at begin position
+7. Deleting an element from the list at end position
+8. Deleting an element from the list at specified position
+9. Counting the number of elements or nodes
+10. Reversing a list
+
+LINKED LIST INSERTION OF AN ELEMENT AT 
+1. BEGINNING
+2. ENDING
+3. SPECIFIED POSITION 
