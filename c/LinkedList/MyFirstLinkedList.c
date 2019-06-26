@@ -2,8 +2,8 @@
 #include <stdlib.h>
 struct node
    {
-   
-   
+
+
    int data;
    struct node *next
    };
@@ -12,11 +12,11 @@ struct node
    //char ch;
    struct node *p, g;
    int AcessData()
-   {    
+   {
          p = (struct node *)malloc(sizeof(struct node));
          scanf("%d", &value);
-         p->data = value;  // assigin  value to member of  of stucture data 
-         p->next = NULL;  //  next pointing to last elment 
+         p->data = value;  // assigin  value to member of  of stucture data
+         p->next = NULL;  //  next pointing to last elment
          if (head == NULL)
          {
             head = p;   // heding pointing to first  if it is null
@@ -24,7 +24,7 @@ struct node
          }
          else
          {
-            taill->next = p; // 
+            taill->next = p; //
             taill = p;
          }
 }
@@ -35,13 +35,13 @@ int show(){
      printf("%d \t",temp->data);
      temp = temp->next;
    }
-   
+
 }
 
 int main(){
   int value;
   while (1)
-  { 
+  {
    printf("\n");
    printf("1 \t Enter Number \n");
    printf("2 \t show \n");
@@ -62,8 +62,8 @@ int main(){
    default:
    printf("Eneter Valid Value");
      main();
-     
+
    }
-          
+
   }
 }
