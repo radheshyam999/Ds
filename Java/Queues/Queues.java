@@ -11,8 +11,8 @@ import java.util.Scanner;
       top = -1;
      q = new ArrayList<>();
      Takeinput = new Scanner(System.in);
-    System.out.println("what ll size of Array");
-    max = Takeinput.nextInt();
+     System.out.println("what ll size of Array");
+     max = Takeinput.nextInt();
 
     }
     void push(){

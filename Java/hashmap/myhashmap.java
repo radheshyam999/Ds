@@ -1,5 +1,6 @@
 import java.util.HashMap;
 import java.util.*;
+collections
 public class myhashmap{
 
   public static void main(String[] args) {
@@ -21,7 +22,7 @@ public class myhashmap{
     for(Map.Entry l:ha.entrySet()){
      System.out.println(l.getKey());
     System.out.println(l.getValue());
-
+  Spliterators
     }
    }
 

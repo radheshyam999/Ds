@@ -16,7 +16,7 @@ struct node
          p = (struct node *)malloc(sizeof(struct node));
          scanf("%d", &value);
          p->data = value;  // assigin  value to member of  of stucture data
-         p->next = NULL;  //  next pointing to last elment
+        // p->next = NULL;  //  next pointing to last elment
          if (head == NULL)
          {
             head = p;   // heding pointing to first  if it is null

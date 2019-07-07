@@ -69,23 +69,17 @@ int push()
      {
          bottum++;
      }
-     
-     
   }
-int Display()
+ int Display()
      {   if (top ==-1)
           {
            printf("Empaty \n");
           }
           else
-          {
+              {
               for (int i = bottum; i <= top; i++)
               {
                 printf("[%d] %d", i, Que[i]);
               }
           }
-          
-     
-       
-       
-    }
+ }

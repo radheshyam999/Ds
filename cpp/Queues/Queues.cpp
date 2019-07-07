@@ -1,19 +1,20 @@
 #include<iostream>
+#include<vector>
 using namespace std;
-class queues {
-   int max;
-    int arr[max];
-    int top = -1;
-    int start = 0;
+class Queues {
 
-  public:   queues(){
-       cin >> max;
+  public:  static const int max=5;
+  public:  int arr[max];
+  public:  int top , start ;
+  public:   Queues(){
+       top =-1;
+       start = 0;
      }
      int push(){
         int value;
-       if (top ==max-1) {
-         cout << "overflow" << endl;
-       }
+        if (top == max-1) {
+          cout << "overflow" << endl;
+         }
        else{
           cout << "Enter A Number";
           cin >> value;
@@ -32,7 +33,7 @@ class queues {
 
      }
      int show(){
-       for ( int i=start; i<max  i++) {
+       for ( int i=start; i<max;  i++) {
          cout << arr[i];
        }
      }
@@ -40,7 +41,7 @@ class queues {
 
 };
 int main(int argc, char const *argv[]) {
-  queues acess;
+  Queues acess;
   int option;
   while (true) {
     /* code */
