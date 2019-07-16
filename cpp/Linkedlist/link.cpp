@@ -32,7 +32,7 @@ typedef struct Node{
      public:void addFirst(){
              int value;
              node *p = new node;
-             p==NULL?"Emapaty":"allocated";
+
              cout << "Enter a Number ";
              cin >> p->Data;
              cout << p->Data << '\n';
@@ -48,7 +48,37 @@ typedef struct Node{
             }
         }
      public:void addAtIndex(int x){
+        if (x<0){
+       cout <<"you cant enter less than Zero" <<'\n';
+           }
+      else{
+        int value;
+        node *p = new node;
 
+        cout << "Enter a Number ";
+        cin >> p->Data;
+        cout << p->Data << '\n';
+        //p->Data = value;
+        p->next = NULL;
+        if (begin == NULL) {
+          begin = p;
+          end = p;
+         }
+       else{
+          temp = head;
+         int i =0;
+         while (true) {
+          temp = temp->next;
+             if (i==x) {
+               
+               break
+             }
+          i++;
+         }
+         p->next = begin;
+         begin = p;
+       }
+      }
      }
      public: void show(){
              temp = begin;
