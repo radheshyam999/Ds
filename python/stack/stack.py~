@@ -1,0 +1,13 @@
+def dlfjk():
+
+    i=0
+while i < 5:
+
+    print("hello g vim ")
+
+i+=1
+
+
+
+dlfjk();
+
