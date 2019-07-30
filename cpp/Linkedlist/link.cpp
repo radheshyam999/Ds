@@ -65,13 +65,13 @@ typedef struct Node{
           end = p;
          }
        else{
-          temp = head;
+          temp = begin;
          int i =0;
          while (true) {
           temp = temp->next;
              if (i==x) {
-               
-               break
+
+               break;
              }
           i++;
          }
@@ -96,13 +96,13 @@ typedef struct Node{
 };
 int main(int argc, char const *argv[]) {
          link obj;
-         int option;
+         int option,x;
          while(true) {
               cout << "1 \t addFirst" <<endl;
               cout << "2 \t addLast" <<endl;
               cout << "3 \t addAtIndex" <<endl;
               cout << "4 \t show"<<endl;
-              cout << "5 \t Exit"
+              cout << "5 \t Exit";
               cin >> option;
               cout << option << '\n';
               switch (option) {
@@ -113,8 +113,9 @@ int main(int argc, char const *argv[]) {
                   obj.addLast();
                 break;
                 case 3:
-                  obj.addAtIndex(x)
-                break;
+                  scanf("%d",&x);
+                  obj.addAtIndex(x);
+                 break;
                 case 4:
                   exit(0);
                 break;
