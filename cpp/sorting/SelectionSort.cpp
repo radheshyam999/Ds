@@ -9,7 +9,7 @@ class SelctionSort{
                  {if (arr[j] < arr[small]){
                           small = j;
                         }
-          }
+                   }
           if (i != small) {
               temp = arr[i];
               arr[i] =arr[small];
@@ -17,7 +17,7 @@ class SelctionSort{
             }
           }
           int i = 0;
-          while(i <=size){
+          while(i <size){
             std::cout << arr[i] << "\t";
             i++;
           }
@@ -40,7 +40,7 @@ class SelctionSort{
     }
 
     int i = 0;
-    while(i <=size){
+    while(i <size){
       std::cout << arr[i] << "\t";
       i++;
     }

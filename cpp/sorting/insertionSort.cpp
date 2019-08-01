@@ -3,17 +3,18 @@ class InsertionSort{
 public: void Asc(int arr[],int size){
         int j,kt,temp;
         for (int i = 1; i < size; i++) {
-          j = i-1;
+          j = i;
           kt = arr[i];
-           while (j > 0 && kt < arr[j]){
+           while (j > 0 && kt < arr[j-1]){
 
-             arr[j] = arr[j+1];
-             arr[j+1] = kt;
+             arr[j] = arr[j-1];
              j--;
+
            }
+       arr[j] = kt;
         }
         int i = 0;
-        while(i <=size){
+        while(i <size){
           std::cout << arr[i] << "\t";
           i++;
         }
@@ -31,7 +32,7 @@ public: void Dsc(int arr[],int size){
      }
   }
   int i = 0;
-  while(i <=size){
+  while(i <size){
     std::cout << arr[i] << "\t";
     i++;
   }
