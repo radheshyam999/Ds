@@ -7,6 +7,7 @@ typedef struct Node{
  class link{
    node *begin,*end,*temp;
     public: link(){
+
            begin = NULL;
            end = NULL;
            temp = NULL;
@@ -20,6 +21,7 @@ typedef struct Node{
             p->Data = value;
             p->next = NULL;
             if (begin == NULL) {
+                /** if  there would be no Element that to we need to assigen it in first  **/
                begin = p;
                end = p;
                }

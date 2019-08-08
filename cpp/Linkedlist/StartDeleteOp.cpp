@@ -108,13 +108,13 @@ while (temp->prev !=NULL) {
              cout <<" You Dont Have Any Element to Remove" << '\n';
            }
       else{
-          while (temp != NULL){
+          while (temp->next != NULL){
             t = temp;
             temp = temp->next;
           }
-          t = NULL;
-          temp->prev = NULL;
-          temp = NULL;
+          //t = NULL;
+          //temp->prev = NULL;
+          t->next = NULL;
 
       }
  }
