@@ -6,27 +6,27 @@ class node{
           node *next;
 
           node *prev;
-};
+        };
 
 
 class Reverse {
   public:
     node *root;
     void AddFirst(){
-      node *p  = new node();
-      cin >> p->data;
-      p->next = NULL;
-      p->prev = NULL;
+       node *p  = new node();
+       cin >> p->data;
+       p->next = NULL;
+       p->prev = NULL;
 
       if (root==NULL) {
-         root = p;
-      }
-      else{
-         node *temp = root;
-          while (temp->prev != NULL) {
+           root = p;
+            }
+        else{
+            node *temp = root;
+            while (temp->prev != NULL) {
                  temp = temp->prev;
 
-          }
+              }
 
           temp->prev = p;
           p->next = root;
@@ -117,4 +117,5 @@ int main(int argc, char const *argv[]) {
 
 
   return 0;
+//hello world this is comment//
 }
