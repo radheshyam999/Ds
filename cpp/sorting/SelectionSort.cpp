@@ -4,7 +4,8 @@ class SelctionSort{
 
        int small,temp;
        for (int i = 0; i < size-1; i++)
-        {small = i;
+        {
+              small = i;
               for (int j = i+1; j < size; j++){
                      if (arr[j] < arr[small]){
                           small = j;
