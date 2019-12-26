@@ -1,6 +1,29 @@
 #include "iostream"
 class SelctionSort{
-  public: void  asc(int arr[],int size){
+/**
+ * arr[]={82,78,9,99,2,56};
+ * int small,temp;
+ * loop->i=0 to i<sizeof(arr)/sizeof(int) i++
+ * 	small=1;
+ * 	loop->j=i+1 j < sizeof(arr)/sizeof(int) j++
+ *              if(arr[j] <arr[small])
+ *              	small = j
+ *              
+ * if(small != i)
+ * 	temp = arr[i]
+ * 	arr[i] = arr[small]
+ * 	arr[small]=temp             
+ *
+ *
+ *
+ *
+ *
+ *
+ * **/  
+	
+	
+	
+public: void  asc(int arr[],int size){
 
        int small,temp;
        for (int i = 0; i < size-1; i++)
@@ -23,7 +46,9 @@ class SelctionSort{
             i++;
           }
      }
-  public: void  dsc(int arr[],int size){
+ /**
+  *
+  * public: void  dsc(int arr[],int size){
     int bigger,temp;
     for (int i=0; i<size-1; i++) {
        bigger =i;
@@ -39,7 +64,9 @@ class SelctionSort{
          arr[bigger] = temp;
        }
     }
-
+*
+*
+* */
     int i = 0;
     while(i <size){
       std::cout << arr[i] << "\t";

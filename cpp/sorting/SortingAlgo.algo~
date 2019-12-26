@@ -1,0 +1,36 @@
+bublesort
+loop i->0 to n-1
+    loop j->0 to n-i-1
+         if arr[j] > arr[j+1]:
+           temp = arr[j];
+           arr[j] = arr[+1]
+           arr[j+1] = temp
+
+
+
+selction sort
+n is size of array
+   loop i -> 0 to n-1
+-       min -> i;
+       loop j -> i+1 to n time
+           if arr[j] < arr[min]:
+                 min -> j
+        if i !-> min:
+             temp -> arr[i]
+             arr[i] -> arr[min]
+             arr[i] -> temp
+
+
+InsertionSort
+    loop i->1 to n
+         j -> i
+         key -> arr[i]
+         loop j > 0 && key < arr[j-1]
+              arr[j-1] = arr[j]
+              j--
+      
+        arr[j] = key
+
+MergSort
+     loop
+     

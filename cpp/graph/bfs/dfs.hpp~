@@ -1,0 +1,13 @@
+#ifndef dfs_hpp
+#define dfs_hpp
+class dfs{
+	public:
+		///you need to here for public
+	private:
+		// you need to write for private
+	protected:	
+                  // you need to write for protected 
+
+
+};
+#endif

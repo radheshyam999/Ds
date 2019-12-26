@@ -1,0 +1,17 @@
+c=gcc
+cc=g++
+
+ifeq ($(cc), g++)
+compile: Union.o main.o
+	$(cc) main.o Union.o -o funo
+	echo'i am Succeid'
+Union.o: Union.hpp Union.cpp 
+	$(cc) -c Union.cpp 
+mian.o: main.cpp
+	$(cc) -c main.cpp
+else 
+	echo'i failed'
+endif
+
+clean:
+	rm -rf *.o *.exe	

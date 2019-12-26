@@ -1,7 +1,9 @@
-cc=g++
 c=gcc
+cc=g++
+
 compile: Union.o main.o
 	$(cc) main.o Union.o -o funo
+	
 Union.o: Union.hpp Union.cpp 
 	$(cc) -c Union.cpp 
 mian.o: main.cpp

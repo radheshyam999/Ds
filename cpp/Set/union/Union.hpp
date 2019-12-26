@@ -3,21 +3,20 @@
 class Union
 {
 private:
-    
-     int display(char A[]);
-    bool isElementAvl(char arr[], char element);
+    int display(char A[]);
+     bool isElementAvl(char arr[], char element);
   
 public:
-    virtual ~Union();
-    Union(/* args */);
+        virtual ~Union();
+        Union();
         char* LetFindUnion(char A[],char B[]);
+         void startGaming();
+
+
+
+
+
+
 };
 
-
-
-
-
-
-
-
-#endif // !1
+#endif // !

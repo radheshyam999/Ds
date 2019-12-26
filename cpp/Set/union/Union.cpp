@@ -1,5 +1,5 @@
-#include<iostream>
-#include"Union.hpp"
+#include <iostream>
+#include "Union.hpp"
 using namespace std;
 Union::Union(){
     cout<<"hello i am conctrucuter" << endl;
@@ -11,7 +11,7 @@ char* Union::LetFindUnion(char A[], char B[]){
        int i =0;
        int j = 0;
        int temp =0;
-       char unio[(int)(sizeof(A)/sizeof(*A)+(sizeof(B)/sizeof(*B)))];
+       char unio[(int)((sizeof(A)/sizeof(*A))+((sizeof(B)/sizeof(*B))))];
        while (i<sizeof(B)/sizeof(*B))
        {    
            temp  = B[i];
